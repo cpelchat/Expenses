@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		73D70159231EB6A400938735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D70158231EB6A400938735 /* AppDelegate.swift */; };
-		73D7015B231EB6A400938735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7015A231EB6A400938735 /* ViewController.swift */; };
 		73D7015E231EB6A400938735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D7015C231EB6A400938735 /* Main.storyboard */; };
 		73D70161231EB6A400938735 /* Expenses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73D7015F231EB6A400938735 /* Expenses.xcdatamodeld */; };
 		73D70163231EB6A600938735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D70162231EB6A600938735 /* Assets.xcassets */; };
 		73D70166231EB6A600938735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D70164231EB6A600938735 /* LaunchScreen.storyboard */; };
 		73D70171231EB6A600938735 /* ExpensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D70170231EB6A600938735 /* ExpensesUITests.swift */; };
+		73D7017E231EBDCD00938735 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7017D231EBDCD00938735 /* Expense.swift */; };
+		73D70180231EBEAC00938735 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7017F231EBEAC00938735 /* ExpensesViewController.swift */; };
+		73D70182231EC70300938735 /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D70181231EC70300938735 /* ExpenseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,6 @@
 /* Begin PBXFileReference section */
 		73D70155231EB6A400938735 /* Expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D70158231EB6A400938735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73D7015A231EB6A400938735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73D7015D231EB6A400938735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73D70160231EB6A400938735 /* Expenses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expenses.xcdatamodel; sourceTree = "<group>"; };
 		73D70162231EB6A600938735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +39,9 @@
 		73D7016C231EB6A600938735 /* ExpensesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpensesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D70170231EB6A600938735 /* ExpensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesUITests.swift; sourceTree = "<group>"; };
 		73D70172231EB6A600938735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D7017D231EBDCD00938735 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		73D7017F231EBEAC00938735 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		73D70181231EC70300938735 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				73D70158231EB6A400938735 /* AppDelegate.swift */,
-				73D7015A231EB6A400938735 /* ViewController.swift */,
 				73D7015C231EB6A400938735 /* Main.storyboard */,
+				73D7017F231EBEAC00938735 /* ExpensesViewController.swift */,
+				73D70181231EC70300938735 /* ExpenseTableViewCell.swift */,
 				73D70162231EB6A600938735 /* Assets.xcassets */,
 				73D70164231EB6A600938735 /* LaunchScreen.storyboard */,
 				73D70167231EB6A600938735 /* Info.plist */,
 				73D7015F231EB6A400938735 /* Expenses.xcdatamodeld */,
+				73D7017D231EBDCD00938735 /* Expense.swift */,
 			);
 			path = Expenses;
 			sourceTree = "<group>";
@@ -200,7 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D7015B231EB6A400938735 /* ViewController.swift in Sources */,
+				73D70182231EC70300938735 /* ExpenseTableViewCell.swift in Sources */,
+				73D7017E231EBDCD00938735 /* Expense.swift in Sources */,
+				73D70180231EBEAC00938735 /* ExpensesViewController.swift in Sources */,
 				73D70161231EB6A400938735 /* Expenses.xcdatamodeld in Sources */,
 				73D70159231EB6A400938735 /* AppDelegate.swift in Sources */,
 			);
